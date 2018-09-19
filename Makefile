@@ -14,7 +14,8 @@ bindir	:= bin
 libdir	:= lib
 incdir	:= include
 
-$(shell mkdir -p $(libdir))
+# make sure bin and lib directories exist
+$(shell mkdir -p $(libdir) $(bindir))
 
 # Set AT equal to the @ symbol to suppress display of instructions
 # while make executes
