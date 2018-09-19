@@ -14,6 +14,8 @@ bindir	:= bin
 libdir	:= lib
 incdir	:= include
 
+$(shell mkdir -p $(libdir))
+
 # Set AT equal to the @ symbol to suppress display of instructions
 # while make executes
 ifdef verbose
